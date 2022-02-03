@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   position: relative;
   overflow: hidden;
-  padding: 140px 0 100px 0;
+  padding: 140px 0 20px 0;
 }
 #hero::before {
   content: "";
@@ -313,7 +313,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 200%;
   z-index: -1;
   background-color: #e8ecf5;
-  transform: skewY(135deg);
+  transform: skewY(-0.12turn);
 }
 #hero h1 {
   margin: 0 0 10px 0;
@@ -387,15 +387,107 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Hero2 Section
+--------------------------------------------------------------*/
+#hero2 {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0 100px 0;
+}
+#hero2::before {
+  content: "";
+  position: absolute;
+  right: -100%;
+  top: 0%;
+  width: 339.2%;
+  height: 230%;
+  z-index: -1;
+  background-color: #e8ecf5;
+  transform: skewY(-0.12turn);
+}
+#hero2 h1 {
+  margin: 0 0 10px 0;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+  color: #5172FF;
+  font-family: "Poppins", sans-serif;
+}
+#hero2 h2 {
+  color: #515f7d;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+#hero2 .download-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  display: inline-block;
+  padding: 8px 24px 10px 46px;
+  border-radius: 3px;
+  transition: 0.5s;
+  color: #fff;
+  background: #47536e;
+  position: relative;
+}
+#hero2 .download-btn:hover {
+  background: #5777ba;
+}
+#hero2 .download-btn i {
+  font-size: 20px;
+  position: absolute;
+  left: 18px;
+  top: 8.5px;
+}
+#hero2 .download-btn + .download-btn {
+  margin-left: 20px;
+}
+@media (max-width: 991px) {
+  #hero2 {
+    text-align: center;
+  }
+  #hero2 .download-btn + .download-btn {
+    margin: 0 10px;
+  }
+  #hero2 .hero-img {
+    text-align: center;
+  }
+  #hero2 .hero-img img {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  #hero2 h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero2 h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  #hero2 .hero-img img {
+    width: 70%;
+  }
+}
+@media (max-width: 575px) {
+  #hero2 .hero-img img {
+    width: 80%;
+  }
+}
+
+
+/*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding: 0, 0;
   overflow: hidden;
 }
 
 .section-bg {
-  background-color: #f2f5fa;
+  background-color: #e8ecf5;
 }
 
 .section-title {
@@ -403,6 +495,7 @@ section {
   padding-bottom: 30px;
 }
 .section-title h2 {
+  margin-top: 10px;
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 20px;
@@ -924,6 +1017,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+  margin-top: 10px;
   background: #fff;
   padding: 0 0 30px 0;
   color: #47536e;
