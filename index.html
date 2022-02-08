@@ -553,7 +553,7 @@ It is meant to store all the links in the same application so you will find them
           </div>
 
           <div class="col-lg-6">
-            <form action="mailto:pecillizaninibsns@gmail.com" method="post" class="php-email-form">
+            <form id="gform" action="https://script.google.com/macros/s/AKfycbx-pOSAZW_Vjwh4eIY2kM7aNVMGNz1BlfOmjW00OuJX1kXPKgg/exec" method="post" class="php-email-form">
               <div class="form-group">
                 <input placeholder="Your Name" type="text" name="name" class="form-control" id="name" required>
               </div>
@@ -561,15 +561,10 @@ It is meant to store all the links in the same application so you will find them
                 <input placeholder="Your Email" type="email" class="form-control" name="email" id="email" required>
               </div>
               <div class="form-group mt-3">
-                <input placeholder="Subject" type="text" class="form-control" name="subject" id="subject" required>
+                <input placeholder="Subject" type="text" class="form-control" name="color" id="color" required>
               </div>
               <div class="form-group mt-3">
                 <textarea placeholder="Message" class="form-control" name="message" rows="5" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
